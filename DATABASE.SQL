@@ -1,4 +1,4 @@
-CREATE DATABASE challenge;
+--CREATE DATABASE challenge;
 
 CREATE TABLE productos (id SERIAL PRIMARY KEY, nombre VARCHAR(50) NOT NULL, foto_de_producto VARCHAR(1000), categoria VARCHAR(100), precio INT);
 
@@ -91,4 +91,4 @@ VALUES
 ('Lámpara LED', 'https://dojiw2m9tvv09.cloudfront.net/14945/product/3437-1-lampara-escritorio-led-cobra-3w-negro-blanco-calido3558.jpg', 'Accesorios', 20000);
 
 
-CREATE TABLE usuarios (id SERIAL PRIMARY KEY, nombre VARCHAR(100) NOT NULL, correo VARCHAR(50) UNIQUE NOT NULL, password VARCHAR(50) NOT NULL);
+CREATE TABLE usuarios (id SERIAL PRIMARY KEY, nombre VARCHAR(100) NOT NULL, correo VARCHAR(50) UNIQUE NOT NULL, password VARCHAR(100) NOT NULL);
